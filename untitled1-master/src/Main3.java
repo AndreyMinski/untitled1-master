@@ -13,7 +13,7 @@ public class Main3 {
             System.out.println(numbers[i]);
         }
         System.out.println();
-        int[] numbers1 = {1, 2, 3, 4, 5};// можно инициализировать массив сразу, если известны значения
+        int[] numbers1 = {1, 2, 10, 4, 60};// можно инициализировать массив сразу, если известны значения
         for (int i = 0; i < numbers1.length; i++) {
             System.out.println(numbers1[i]);
         }
@@ -45,5 +45,27 @@ public class Main3 {
             sum = sum + x; // цикл счтает сумму всех элементов массива и выводит результат в консоль
         }
         System.out.println(sum); // вывод в консоль суммы
+        System.out.println();
+
+        int [][]matrice={{1,2,3},// двумерный массив
+                         {4,5,6},
+                         {7,8,9}};
+
+        for (int i = 0; i<matrice.length;i++){     // цикл проходит по строкам (i = 0, matrice.length = 3 )
+        for (int j = 0; j<matrice[i].length;j++){ // цикл проходит по каждому элементы в строке
+            System.out.print(matrice[i][j]+ " ");
+        }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println(matrice[2][2]); // первое число строка, второе число столбец
+        System.out.println(matrice [1][1]);
+        System.out.println(matrice[0][0]);
+        System.out.println();
+        String [][] string3 = new String[3][3]; //двумерный массив из строк
+        string3[1][1]="Hello World,Java is greate";
+        System.out.println(string3 [1][1]); // образение к элементам как и в цифровом
+
     }
+
 }
